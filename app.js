@@ -17,7 +17,7 @@ app.use(express.static("public"))
 
 // setting up Mongoose Database
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+mongoose.connect("mongodb+srv://admin_jeffrey:Jj419450@cluster0.3wq2y.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
 // Creating new Schema
 const itemsSchema = {
     name: String
